@@ -85,3 +85,6 @@ Edit the apps models in the file models.py in the app folder. Here we have a sim
 
 ### Step 10.
 Import and register the models in the admin.py in the same folder (i.e. in the same app) 
+
+### Step 11. 
+Create urls.py in the catalog folder, and 

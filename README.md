@@ -74,3 +74,9 @@ Then write this in terminal or cmd =>
 pip freeze > requirements.txt
 
 Go in cPanel and upload File .env
+
+### Step 8.
+create superuser:
+```
+python manage.py createsuperuser
+```

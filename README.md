@@ -81,4 +81,7 @@ create superuser:
 python manage.py createsuperuser
 ```
 ### Step 9.
-Edit the apps models in the file models.py in the app folder.
+Edit the apps models in the file models.py in the app folder. Here we have a simple model with Item, Orderitem and Order field
+
+### Step 10.
+Import and register the models in the admin.py in the same folder (i.e. in the same app) 

@@ -80,3 +80,5 @@ create superuser:
 ```
 python manage.py createsuperuser
 ```
+### Step 9.
+Edit the apps models in the file models.py in the app folder.

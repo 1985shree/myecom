@@ -44,4 +44,22 @@ and then save the changes by running back-to back these lines:
 python manage.py makemigrations
 python manage.py migrate
 ```
+### Step 6.
+Include the catalog app in the 'settings.py' file in the main folder (in this case it's myecom)
 
+### Step 7.
+Hide secret key fro github. The key on local machine was on settings.py
+It has to be put in the .env file and then transferred to settings.py in the following steps:
+
+Create File => .env
+Cut this from settings.py =>
+SECRET_KEY = '-----your secret key-----'
+Paste in .env
+Write this in settings.py =>
+from decouple import config
+SECRET_KEY = config("SECRET_KEY")
+Write this in terminal or cmd =>
+pip install python-decouple
+Then write this in terminal or cmd =>
+pip freeze > requirements.txt
+Go in cPanel and upload File .env

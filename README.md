@@ -1,6 +1,6 @@
 # myecom
 ecommerce website
-## This is a step-by-step guide to create a basic website
+## This is a step-by-step guide to create a basic website from scratch using django
 
 Note: we have neither set up virtual environment. In the next project we'll do it. We'll also set up a testing folder.
 
@@ -34,3 +34,14 @@ After the first push, change the branch with the following command:
 ```
 git checkout -b your_branchname
 ```
+### Step 5.
+Create a new app by running
+```
+python manage.py startapp appname
+```
+and then save the changes by running back-to back these lines:
+```
+python manage.py makemigrations
+python manage.py migrate
+```
+

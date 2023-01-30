@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class Item(models.Model):
     title = models.CharField(max_length=200) # name/title of the item
     price = models.DecimalField(max_digits = 1000, decimal_places = 2)
-    discount_price = models.DecimalField(max_digits = 1000, decimal_places = 2)
+    discount_price = models.DecimalField(max_digits = 1000, decimal_places = 2, blank = True, null = True)
     description = models.CharField(max_length=2000)
     slug = models.SlugField() #A "slug" is a way of generating a valid URL, generally using data already obtained. For instance,
     # a slug uses the title of an article to generate a URL, e.g. if title is black polo necked tshirt, slug makes it black-polo-necked-tshirt,
